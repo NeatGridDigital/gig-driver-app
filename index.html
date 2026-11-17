@@ -104,13 +104,14 @@ svg.chart{display:block;width:100%;height:auto;overflow:visible}
 .ring{width:84px;height:84px;flex:none}
 .ring .fill{transition:stroke-dashoffset 1.1s cubic-bezier(.2,.7,.2,1)}
 .ring .pc{font:600 17px var(--display);fill:var(--accent-deep);letter-spacing:-.5px}
-.taxhero .ring{width:96px;height:96px}
+.taxhero .ring{width:84px;height:84px}@media (min-width:600px){.taxhero .ring{width:96px;height:96px}}
 .stat{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);gap:10px;font-size:14px}
 .stat:last-child{border-bottom:0}
 .stat b{font:600 18px var(--display);font-variant-numeric:tabular-nums}
 .stat b.c{color:var(--accent-deep)}
 .taxhero{background:var(--accent-tint);border-radius:18px;padding:18px;display:flex;gap:18px;align-items:center}
-.taxhero .big{font:600 46px/1 var(--display);color:var(--accent-deep);letter-spacing:-1px;font-variant-numeric:tabular-nums lining-nums}
+.taxhero>div{flex:1;min-width:0}
+.taxhero .big{font:600 clamp(28px,8.4vw,46px)/1 var(--display);overflow-wrap:anywhere;color:var(--accent-deep);letter-spacing:-1px;font-variant-numeric:tabular-nums lining-nums}
 .period{display:grid;gap:4px}
 .period .h{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .period .h b{font:600 18px var(--display)}
